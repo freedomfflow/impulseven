@@ -59,8 +59,8 @@
             <div class="col-md-8 d-flex flex-column align-items-center">
                 <h1>Trusted, Fast and Affordable Decentralized Trading</h1>  
                 <div class="col col-md-9 d-flex flex-column flex-md-row">
-                    <button type="button" class="btn col btn-brand-primary">STAKE</button>
-                    <button type="button" class="btn col btn-brand-secondary">WHITEPAPER</button>
+                    <button type="button" class="btn col btn-brand-primary" onclick="goTo('stake')">STAKE</button>
+                    <button type="button" class="btn col btn-brand-secondary" onclick="goTo('white')">WHITEPAPER</button>
                 </div>
             </div>
         </div>
@@ -277,7 +277,7 @@
                         </div>
                     </div>
                     <div class="col d-flex flex-column justify-content-center legend">
-                        <button type="button" class="btn btn-brand-secondary">STAKE</button>
+                        <button type="button" class="btn btn-brand-secondary" onclick="goTo('stake')">STAKE</button>
                         <div class="d-flex justify-content-between category">
                             <p>Staking / Farming / Reward</p>
                             <p>23.5%</p>
@@ -560,19 +560,19 @@
             </div>
         </div>
     </div>
-    <div class="container footer">
+    <div class="container footer" id="footer">
         <div class="row flex-column flex-md-row footer-menu">
             <div class="col d-flex flex-column align-items-center">
                 <h4>Documents</h4>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#">Whitepaper</a>
+                        <a href="#footer" onclick="goTo('white')">Whitepaper</a>
                     </li>
                     <li>
-                        <a href="#">Disclaimer</a>
+                        <a href="#footer" onclick="goTo('disclaimer')">Disclaimer</a>
                     </li>
                     <li>
-                        <a href="#">Terms of Use</a>
+                        <a href="#footer" onclick="goTo('terms')">Terms of Use</a>
                     </li>
                 </ul>
             </div>

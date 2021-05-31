@@ -21,3 +21,14 @@ function restoreText() {
   let element = document.getElementById('chart-text');
   element.innerHTML = "<text x='50%' y='52%' class='chart-number' id='chart-text'>IV</text";
 }
+
+function goTo(id) {
+  let urls = {
+    'stake': 'https://stake.impulseven.com/',
+    'white': 'https://impulseven.com/docs/ImpulseVen-WP.pdf',
+    'disclaimer': 'https://impulseven.com/docs/disclaimer.doc',
+    'terms': 'https://impulseven.com/docs/termsOfUse.docx',
+  };
+
+  window.open(urls[id], "_blank");
+}
