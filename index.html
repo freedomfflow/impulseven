@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Impulseven</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="dist/styles.css">
+        <script src="./dist/impulseven.js" type="text/javascript" defer></script>
+    </head>
+    <body data-spy="scroll" data-target="#sidenav-items" onload="restoreText()">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-md">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo-impulseven.svg" alt="Impulseven Logo"></a>
+            <button type="button" class="btn" data-toggle="modal" data-target="#sidenav">
+                <img src="./img/menu-hamburger.svg" alt="menu options">
+            </button>
+        </div>
+    </nav>
+    <!-- SideNav -->
+	<div class="modal left fade" id="sidenav" tabindex="" role="dialog" aria-labelledby="sidenav" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="sidenav-items">
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>Close
+                    </button>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- SideNav -->
+    <div id="home" class="container banner-1">
+        <div class="row align-items-center justify-content-center intro-text">
+            <div class="col-md-8 d-flex flex-column align-items-center">
+                <h1>Trusted, Fast and Affordable Decentralized Trading</h1>  
+                <div class="col col-md-9 d-flex flex-column flex-md-row">
+                    <button type="button" class="btn col btn-brand-primary">STAKE</button>
+                    <button type="button" class="btn col btn-brand-secondary">WHITEPAPER</button>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-1">
+            <div class="col-md-3">
+                <div class="d-flex flex-column align-items-center justify-content-center features gen4">
+                    <img src="./img/gen4-icon.png" alt="icon for decentralised">
+                    <p>GEN/4 DECENTRALISED<br/>EXCHANGE</p>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-end features more">
+                    <p>MORE FEATURES</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex flex-column align-items-center justify-content-around features ai-trade">
+                    <img src="./img/ai-trade-icon.png" alt="icon for Arbitrage Trading">
+                    <p>ARBITRAGE TRADING</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column align-items-center justify-content-around features lending-platform">
+                    <img src="./img/lending-platform-icon.png" alt="icon for Lending Platform">
+                    <p>LENDING PLATFORM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="product" class="container banner-2">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="row section-title">
+                    <div class="col">
+                        <h2>01<span>The Product</span></h2>
+                    </div>
+                    <div class="col">
+                        <p>ImpulSeven is a complete decentralized finance ecosystem that offers a range of solutions, including lending, staking, farming, trading and a decentralized exchange all in one suite.</p>
+                    </div>
+                </div>
+                <div class="row gx-0 flex-md-row section-products">
+                    <div class="col-md-7 d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column flex-md-row align-items-center products">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img src="./img/products_icon-gen4.png" alt="Gen4 DeX Icon">
+                            </div>
+                            <div class="col products-txt">
+                                <h3>Gen/4 DeX</h3>
+                                <p>ImpulSeven is a complete decentralized finance ecosystem offers a range of solutions, including lending, staking, farm.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-center products">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                                <img src="./img/products_icon-lending.png" alt="Gen4 DeX Icon">
+                            </div>
+                            <div class="col products-txt">
+                                <h3>Lending Platform</h3>
+                                <p>ImpulSeven is a complete decentralized finance ecosystem offers a range of solutions, including lending, staking, farm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center justify-content-center products products-vertical">
+                        <img src="./img/products_icon-ai.png" alt="icon for AI Trading">
+                        <div class="d-flex flex-column justify-content-center products-txt">
+                            <h3>Arbitrage Trading</h3>
+                            <p>Use the bot to trade for you and receive your profits in your account.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-0 section-products">
+                    <div class="col d-flex flex-column align-items-center justify-content-around products products-vertical">
+                        <img src="./img/products_icon-yield.png" alt="icon for Yield">
+                        <h3>Yield / Liquidity Farming</h3>
+                        <p>ImpulSeven is a complete decentraliz finance ecosystem offers a range of.</p>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center justify-content-around products products-vertical">
+                        <img src="./img/products_icon-bill.png" alt="icon for Billing">
+                        <h3>Recurring Billing</h3>
+                        <p>ImpulseVen is a complete decentraliz finance ecosystem that offers a range.</p>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center justify-content-around products products-vertical">
+                        <img src="./img/products_icon-rewards.png" alt="icon for Rewards">
+                        <h3>Staking Rewards</h3>
+                        <p>Deposit your digital assets and earn passive income in IV Tokens.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features" class="container banner-3">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="row section-title">
+                    <div class="col">
+                        <h2>02<span>Unique Features</span></h2>
+                    </div>
+                </div>
+                <div class="row gx-0 features-list">
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center features">
+                        <img src="img/unique_icon-user.png" alt="icon of user">
+                        <p>User centred</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center features">
+                        <img src="img/unique_icon-fast.png" alt="icon of fast and reliable">
+                        <p>Fast & Reliable</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center features">
+                        <img src="img/unique_icon-trans.png" alt="icon of transparent">
+                        <p>Fully Transparent</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center features">
+                        <img src="img/unique_icon-trade.png" alt="icon of trade execution">
+                        <p>Trade Execution Coordinators</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center features">
+                        <img src="img/unique_icon-democratised.png" alt="icon of democratised">
+                        <p>Democratised</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center features">
+                        <img src="img/unique_icon-erc20.png" alt="icon ofERC20">
+                        <p>User centred</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="roadmap" class="container banner-4">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="row section-title">
+                    <div class="col">
+                        <h2>03<span>Roadmap</span></h2>
+                    </div>
+                </div>
+                <div class="roadmap-list">
+                    <div class="row">
+                        <div class="col d-flex flex-column align-items-center">
+                            <div class="d-flex align-items-center justify-content-center quarters quarters-teal">Q3 / 20</div>
+                            <div class="roadmap roadmap-teal">
+                                <ul>
+                                    <li>Planning Market Research Started</li>
+                                    <li>Contract Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <div class="d-flex align-items-center justify-content-center quarters quarters-purple">Q1 / 21</div>
+                            <div class="roadmap roadmap-purple">
+                                <ul>
+                                    <li>Smart Contract Developed</li>
+                                    <li>CMC & Coingecko listing</li>
+                                    <li>Staking Platform Launch</li>
+                                    <li>Farming Platform Launch</li>
+                                    <li>CEX Listing</li>
+                                    <li>Marketing Commences</li>
+                                    <li>Partnership Announcement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <div class="d-flex align-items-center justify-content-center quarters quarters-teal">Q4 / 20</div>
+                            <div class="roadmap roadmap-teal">
+                                <ul>
+                                    <li>Whitepaper V1.0 Launch</li>
+                                    <li>Website Launch</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <div class="d-flex align-items-center justify-content-center quarters quarters-purple">Q2 / 21</div>
+                            <div class="roadmap roadmap-purple">
+                                <ul>
+                                    <li>Impulseven Wallet Launch</li>
+                                    <li>DAO Launch</li>
+                                    <li>IMPULSEVEN NFT</li>
+                                    <li>Lending & Borrowing Platform Launch</li>                          
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tokenomics" class="container banner-5">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="section-title">
+                    <div class="col">
+                        <h2>04<span>Tokenomics</span></h2>
+                    </div>
+                </div>
+                <div class="row flex-column flex-md-row">
+                    <div class="col d-flex justify-content-around flex-column">
+                        <img class="overview-graphic" src="img/tokemonics-distribution.png" alt="">
+                        <p class="overview">ImpulSeven has outlined the token allocation model for IV, including a detailed breakup of token supply and lock in period for each category.</p>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-center graph">
+                        <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#11081D"></circle>
+                            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#11081D" stroke-width="1"></circle>
+
+                            <circle id="segment1" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4A07FF" stroke-width="1" stroke-dasharray="22 78" stroke-dashoffset="24" stroke-linecap="round"></circle>
+                            <circle id="segment2" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1462F5" stroke-width="1" stroke-dasharray="21 79" stroke-dashoffset="100" stroke-linecap="round"></circle>
+                            <circle id="segment3" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1232E2E9" stroke-width="1" stroke-dasharray="10 90" stroke-dashoffset="77" stroke-linecap="round"></circle>
+                            <circle id="segment4" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2082E9" stroke-width="1" stroke-dasharray="10 90" stroke-dashoffset="65" stroke-linecap="round"></circle>
+                            <circle id="segment5" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#7583F0" stroke-width="1" stroke-dasharray="6 94" stroke-dashoffset="53" stroke-linecap="round"></circle>
+                            <circle id="segment6" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FB8C01" stroke-width="1" stroke-dasharray="5 95" stroke-dashoffset="45" stroke-linecap="round"></circle>
+                            <circle id="segment7" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#23C4F8" stroke-width="1" stroke-dasharray="3 97" stroke-dashoffset="38" stroke-linecap="round"></circle>
+                            <circle id="segment8" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#4E25F8" stroke-width="1" stroke-dasharray="3 97" stroke-dashoffset="33" stroke-linecap="round"></circle>
+                            <circle id="segment9" onmouseover="restoreText()" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#5C0BAD" stroke-width="1" stroke-dasharray="2 98" stroke-dashoffset="28" stroke-linecap="round"></circle>
+<!--                            <circle id="segment9" onmouseover="changeText(this.id)" onmouseout="restoreText()" class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#5C0BAD" stroke-width="1" stroke-dasharray="2 98" stroke-dashoffset="28" stroke-linecap="round"></circle>-->
+                            <g class="chart-text" id="chart-text"></g>
+                        </svg>
+                        <div class="inner-circle align-middle">
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-center legend">
+                        <button type="button" class="btn btn-brand-secondary">STAKE</button>
+                        <div class="d-flex justify-content-between category">
+                            <p>Staking / Farming / Reward</p>
+                            <p>23.5%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-1" role="progressbar" aria-valuenow="23.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Private Round</p>
+                            <p>17%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-2" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Liquidity for DEX</p>
+                            <p>8.5%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-3" role="progressbar" style="width: 9%" aria-valuenow="8.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Public Sale</p>
+                            <p>3%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-4" role="progressbar" style="width: 3%" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Strategic Round</p>
+                            <p>14%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-5" role="progressbar" style="width: 14%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Marketing</p>
+                            <p>8%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-6" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Team / Advisor</p>
+                            <p>12%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-7" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Reserve</p>
+                            <p>5%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-8" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between category">
+                            <p>Development Fund</p>
+                            <p>9%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-9" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="team" class="container banner-6">
+        <div class="row flex-column flex-md-row justify-content-center">
+            <div class="col col-md-11">
+                <div class="row flex-column flex-md-row section-title">
+                    <div class="col-md-5">
+                        <h2>05<span>Our Team</span></h2>
+                        <p class="overview">ImpulSeven is led by a group of highly skilled professionals who come with years of experience in diverse fields under their belt. The noteworthy professionals include:</p>
+                    </div>
+                    <div class="col col-md2 team-facts">
+                        <p class="number-lg">10+</p>
+                        <p>Team members & advisors</p>
+                    </div>
+                    <div class="col col-md-2 team-facts">
+                        <p class="number-lg">200</p>
+                        <p>Years+ of combined experience</p>
+                    </div>
+                    <div class="col col-md-2 team-facts">
+                        <p class="number-lg">10</p>
+                        <p>Fact goes here this one is two lines</p>
+                    </div>
+                </div>
+                <div class="row team">
+                    <div class="col-md-4 d-flex flex-column">
+                        <a href="#coraModal" data-toggle="modal" data-target="#coraModal"><img src="img/team-cora.png" alt="CORA NG-KORIMBOCUS"></a>
+                        <div class="d-flex justify-content-between member-details">
+                            <div class="col d-flex flex-column">
+                                <h4>CORA NG-KORIMBOCUS</h4>
+                                <p>COO</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/cora-ng-korimbocus-dipm-fcim-411b1a74/"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="coraModal" tabindex="-1" role="dialog" aria-labelledby="Cora Ng-Korimbocus" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="coraModal">Cora Ng-Korimbocus</h5>
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <img src="img/team-cora.png" alt="CORA NG-KORIMBOCUS">
+                                        </div>
+                                    </div>
+                                    <p>Joining ImpuseVen as the COO, Cora brings in over 20 years of experience in management and communications to the project. She holds management positions in several key companies in Mauritius and has efficiently managed both domestic and international brands. As a project in the DeFi space, ImpulseVen will benefit from her previous experience at the Financial Services Promotion Agency (FSPA) and the Tender Committee. She is also an entrepreneur credited for co-founding C&S Inc. -- a communication agency that offers Brand and Communication Development consulting for prominent companies.</p>
+                                    <p>With Brand and Integrated Communications as her forte, Cora will play a crucial role in shaping the success of ImpulseVen by building a strong community and user base. Her credentials as a certified trainer as well as a pro-active social worker will further empower the ImpulseVen team and help the project reach those who do not have access to financial services to benefit from the DeFi revolution.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <a href="#benitoModal" data-toggle="modal" data-target="#benitoModal"><img src="img/team-benito.png" alt="BENITO ELISA"></a>
+                        <div class="d-flex justify-content-between member-details">
+                            <div class="col d-flex flex-column">
+                                <h4>BENITO ELISA</h4>
+                                <p>Chief Financial Advisor</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/benito-elisa-b154469b/"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="benitoModal" tabindex="-1" role="dialog" aria-labelledby="Benito Elisa" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="benitoModal">Benito Elisa</h5>
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <img src="img/team-benito.png" alt="BENITO ELISA">
+                                        </div>
+                                    </div>
+                                    <p>Guiding the ImpulseVen project to emerge as one of the top DeFi projects capable of solving the problems faced by conventional financial sector is Benito Elisa. A well-known name in the banking and financial sector, Benito Elisa is the founder of some of the prominent projects like Wakanda 4.0, Holo Pub, Tradehood Ltd., Benito Fintech News and more. As the Chief Financial Advisor, Benito is sharing his valuable experience to help the developers of ImpulseVen create a holistic platform that suits the most diverse needs of all the users irrespective of their past experience with alternative financial instruments and platforms.</p>
+                                    <p>Benito is also an official representative of the Mauritius Blockchain Conference and has earlier served as the Advisor in Financial Services to the Ministry of Financial Services and Good Governance, among others.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <a href="#krystelleModal" data-toggle="modal" data-target="#krystelleModal"><img src="img/team-krystelle.png" alt="KRYSTELLE GALANO"></a>
+                        <div class="d-flex justify-content-between member-details">
+                            <div class="col d-flex flex-column">
+                                <h4>KRYSTELLE GALANO</h4>
+                                <p>Chief Partnership Officer</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/krystelle-galano-15940610b"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="krystelleModal" tabindex="-1" role="dialog" aria-labelledby="Krystelle Galano" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="benitoModal">Krystelle Galano</h5>
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <img src="img/team-krystelle.png" alt="KRYSTELLE GALANO">
+                                        </div>
+                                    </div>
+                                    <p>Responsible for forging partnerships with crypto companies, financial institutions, and community groups, Krystelle is a Marketing, Public Relations, and Investor Relations specialist. She has been an advisor for multiple crypto projects including a DEX. A member of the Union of Crypto Advisors, she also has over half a decade experience in social media management ecommerce operations.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <a href="#amitModal" data-toggle="modal" data-target="#amitModal"><img src="img/team-amit.png" alt="AMIT DEBNATH"></a>
+                        <div class="d-flex justify-content-between member-details">
+                            <div class="col d-flex flex-column">
+                                <h4>AMIT DEBNATH</h4>
+                                <p>Lead Developer</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/amit-debnath-34b560200"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="amitModal" tabindex="-1" role="dialog" aria-labelledby="Amit Debanth" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="benitoModal">Amit Debanth</h5>
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <img src="img/team-amit.png" alt="AMIT DEBNATH">
+                                        </div>
+                                    </div>
+                                    <p>With an innate love of writing code to solve complex issues, software developer Amit Debnath has been programming since 2016. Fluent in a variety of computer languages, he has taken the initiative to build user-friendly easy-to-use cryptocurrency platforms which can be readily used by anyone irrespective of their experience in handling cryptocurrencies. As a Senior Programmer with experience managing multiples projects at any given time, he has a strong understanding of the user requirements and plays the role of a leader by setting objectives for new developments. An excellent team player, Amit is developing the ImpulseVen project with his team.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <a href="#muzamilModal" data-toggle="modal" data-target="#muzamilModal"><img src="img/team-muzamil.png" alt="MUZAMIL"></a>
+                        <div class="d-flex justify-content-between member-details">
+                            <div class="col d-flex flex-column">
+                                <h4>MUZAMIL</h4>
+                                <p>Marketing Advisor</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/muzamil-amin-nagoo-a40a282a"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="muzamilModal" tabindex="-1" role="dialog" aria-labelledby="Muzamil" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="benitoModal">Muzamil</h5>
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <img src="img/team-muzamil.png" alt="Muzamil">
+                                        </div>
+                                    </div>
+                                    <p>With over 10 years of events management experience, Muzamil uses his trademark skills of problem solving creativity, and flexibility to help clients produce corporate events and meetings. He excels at logistics and operations, and his attention to detail means that events and meetings go smoothly from concept to completion. Projects count on Muzamil to handle any aspect of any size event. He creates a dynamic online registration platforms, keeps event teams on time and within budget, markets events, handles communications with attendees, and manages all details onsite for seamless execution. Muzamil has organized some of the biggest Blockchain & cryptocurrency events in the Middle East, Africa and Asia. In Impulseven, He will be responsible for organizing webinars, conferences and responsible for partnerships.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container banner-7">
+        <div class="row align-items-center flex-grow-1 justify-content-center">
+            <div class="col-11">
+                <h2>Would you like to join our team?</h2>
+                <a href="#">We're hiring</a>
+            </div>
+        </div>
+    </div>
+    <div class="container menu-bottom">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 d-flex flex-column flex-md-row align-items-center justify-content-sm-between">
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#features">Features</a>
+                <img src="img/logo-impulseven-symbol.svg" alt="impulseven logo symbol">
+                <a href="#roadmap">roadmap</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#team">Team</a>
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="row flex-column flex-md-row footer-menu">
+            <div class="col d-flex flex-column align-items-center">
+                <h4>Documents</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Whitepaper</a>
+                    </li>
+                    <li>
+                        <a href="#">Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+                <h4>Community</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://t.me/impulsevendefi">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/ImpulseVen">Telegram Group</a>
+                    </li> 
+                    <li>
+                        <a href="https://medium.com/@impulsevencoin">Medium</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Impulse_ven?s=09">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center copyright">
+            <div class="col-auto">
+                <p>© IMPUL<span>SEVEN</span></p>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    </body>
+</html>
