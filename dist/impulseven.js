@@ -19,7 +19,7 @@ function changeText(id) {
 
 function restoreText() {
   let element = document.getElementById('chart-text');
-  element.innerHTML = "<text x='50%' y='52%' class='chart-number' id='chart-text'>IV</text";
+  element.innerHTML = "<text x='50%' y='52%' class='chart-number' id='chart-text'>I7</text";
 }
 
 function goTo(id) {
