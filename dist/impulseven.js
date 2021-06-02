@@ -32,3 +32,18 @@ function goTo(id) {
 
   window.open(urls[id], "_blank");
 }
+
+// Adding event listener to each nav link so I can close the modal after we scroll without user click
+function navigation() {
+  let navElements = document.querySelectorAll('.nav-link');
+  let sideNavModal = new bootstrap.Modal(document.querySelector("#sidenav"));
+
+  navElements.forEach(el => el.addEventListener('click', event => {
+    setTimeout(() => {
+      window.scrollBy(0, -100);
+      sideNavModal.hide();
+    }, 700)
+  }));
+}
+
+navigation();
