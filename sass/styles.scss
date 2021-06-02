@@ -148,7 +148,7 @@ body {
     }
 }
 .banner-1 {
-    background: url(../img/bg_banner1-topLeft.png) no-repeat -46px -36px / 161.5px 161.5px, url(../img/bg_banner1-topRight.png) no-repeat top right / 255px 38px;
+    background: url(../img/bg_banner1-topLeft.png) no-repeat -40px 50px / 161.5px 161.5px, url(../img/bg_banner1-topRight.png) no-repeat 103% 100px / 255px 38px;
     padding: 50px 0;
     h1 {
         color: white;
@@ -161,9 +161,6 @@ body {
         &:not(:last-child) {
             margin-bottom: 20px;
         }
-    }
-    .intro-text {
-        height: 300px;
     }
     .features {
         border-radius: 20px;
@@ -190,6 +187,9 @@ body {
 }
 @include media-breakpoint-up(md) {
     .banner-1 {
+        .intro-text {
+            height: 400px;
+        }
         .btn {
             height: 56px;
             &:not(:last-child) {
@@ -208,7 +208,6 @@ body {
 .banner-2 {
     p {
         color: white;
-        font-size: 14px;
         margin-bottom: 0;
     }
     .section-title {
@@ -244,11 +243,27 @@ body {
             margin-bottom: 14px;
         }
     }
+    .glow {
+        position: relative;
+        &-purple {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: -42px;
+        }
+    }
 }
 @include media-breakpoint-up(md) {
     .banner-2 {
         background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px / 66px 104px;
         padding: 50px 0;
+        .glow-purple {
+            display: block;
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .banner-2 {
         .products {
             .products-txt {
                 padding: 80px 80px 80px 0;
@@ -280,6 +295,15 @@ body {
             height: 222px;
         }
     }
+    .glow {
+        position: relative;
+        &-teal {
+            display: none;
+            position: absolute;
+            bottom: -107px;
+            left: -60px;
+        }
+    }
 }
 @include media-breakpoint-up(md) {
     .banner-3 {
@@ -288,6 +312,9 @@ body {
         .features-list {
             background: url(../img/bg_glow-teal.png) no-repeat 50% 109% / 1116px 177px;
             padding-bottom: 40px;
+        }
+        .glow-teal {
+            display: block;
         }
     }
 }
@@ -363,6 +390,9 @@ body {
         background-color: rgba($brand-purple-lt, .15);
         height: 4px;
     }
+    .overview-graphic {
+        margin-bottom: 20px;
+    }
 }
 @include media-breakpoint-up(md) {
     .banner-5 {
@@ -431,13 +461,13 @@ body {
             }
         }
     }
-    @include media-breakpoint-up(md) {
-        .banner-6 {
-            background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px / 66px 104px;
-            padding: 50px 0;
-            .overview {
-                margin-left: 74px;
-            }
+}
+@include media-breakpoint-up(md) {
+    .banner-6 {
+        background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px / 66px 104px;
+        padding: 50px 0;
+        .overview {
+            margin-left: 74px;
         }
     }
 }

@@ -7585,7 +7585,7 @@ body {
       margin-left: 74px; } }
 
 .banner-1 {
-  background: url(../img/bg_banner1-topLeft.png) no-repeat -46px -36px/161.5px 161.5px, url(../img/bg_banner1-topRight.png) no-repeat top right/255px 38px;
+  background: url(../img/bg_banner1-topLeft.png) no-repeat -40px 50px/161.5px 161.5px, url(../img/bg_banner1-topRight.png) no-repeat 103% 100px/255px 38px;
   padding: 50px 0; }
   .banner-1 h1, .banner-1 .h1 {
     color: white;
@@ -7596,8 +7596,6 @@ body {
     border-radius: 0; }
     .banner-1 .btn:not(:last-child) {
       margin-bottom: 20px; }
-  .banner-1 .intro-text {
-    height: 300px; }
   .banner-1 .features {
     border-radius: 20px; }
   .banner-1 .gen4 {
@@ -7614,6 +7612,8 @@ body {
     background: url(../img/lending-platform-bg.png) no-repeat 0 0/695px 470px; }
 
 @media (min-width: 768px) {
+  .banner-1 .intro-text {
+    height: 400px; }
   .banner-1 .btn {
     height: 56px; }
     .banner-1 .btn:not(:last-child) {
@@ -7626,7 +7626,6 @@ body {
 
 .banner-2 p {
   color: white;
-  font-size: 14px;
   margin-bottom: 0; }
 
 .banner-2 .section-title p {
@@ -7652,19 +7651,31 @@ body {
   font-weight: 700;
   margin-bottom: 14px; }
 
+.banner-2 .glow {
+  position: relative; }
+  .banner-2 .glow-purple {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: -42px; }
+
 @media (min-width: 768px) {
   .banner-2 {
     background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px/66px 104px;
     padding: 50px 0; }
-    .banner-2 .products .products-txt {
-      padding: 80px 80px 80px 0; }
-    .banner-2 .products.flex-column {
-      padding: 50px; }
-      .banner-2 .products.flex-column.products-vertical .products-txt {
-        padding: 0 80px 80px; }
-    .banner-2 .section-products:last-child {
-      background: url(../img/bg_glow-blue.png) no-repeat 50% 134%/1143px 228px;
-      padding-bottom: 40px; } }
+    .banner-2 .glow-purple {
+      display: block; } }
+
+@media (min-width: 1200px) {
+  .banner-2 .products .products-txt {
+    padding: 80px 80px 80px 0; }
+  .banner-2 .products.flex-column {
+    padding: 50px; }
+    .banner-2 .products.flex-column.products-vertical .products-txt {
+      padding: 0 80px 80px; }
+  .banner-2 .section-products:last-child {
+    background: url(../img/bg_glow-blue.png) no-repeat 50% 134%/1143px 228px;
+    padding-bottom: 40px; } }
 
 .banner-3 .features {
   background-color: #11081D;
@@ -7674,13 +7685,23 @@ body {
   .banner-3 .features {
     height: 222px; } }
 
+.banner-3 .glow {
+  position: relative; }
+  .banner-3 .glow-teal {
+    display: none;
+    position: absolute;
+    bottom: -107px;
+    left: -60px; }
+
 @media (min-width: 768px) {
   .banner-3 {
     background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px/66px 104px;
     padding: 50px 0; }
     .banner-3 .features-list {
       background: url(../img/bg_glow-teal.png) no-repeat 50% 109%/1116px 177px;
-      padding-bottom: 40px; } }
+      padding-bottom: 40px; }
+    .banner-3 .glow-teal {
+      display: block; } }
 
 .banner-4 .roadmap {
   font-size: 14px;
@@ -7738,6 +7759,8 @@ body {
   .banner-5 .progress {
     background-color: rgba(137, 0, 255, 0.15);
     height: 4px; }
+  .banner-5 .overview-graphic {
+    margin-bottom: 20px; }
 
 @media (min-width: 768px) {
   .banner-5 {
@@ -7793,10 +7816,10 @@ body {
   text-transform: uppercase; }
 
 @media (min-width: 768px) {
-  .banner-6 .banner-6 {
+  .banner-6 {
     background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px/66px 104px;
     padding: 50px 0; }
-    .banner-6 .banner-6 .overview {
+    .banner-6 .overview {
       margin-left: 74px; } }
 
 .banner-7 {
