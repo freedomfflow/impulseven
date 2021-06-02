@@ -7668,7 +7668,7 @@ body {
 
 @media (min-width: 1200px) {
   .banner-2 .products .products-txt {
-    padding: 80px 80px 80px 0; }
+    padding: 0 80px 0 0; }
   .banner-2 .products.flex-column {
     padding: 50px; }
     .banner-2 .products.flex-column.products-vertical .products-txt {
