@@ -670,3 +670,13 @@ body {
 .donut-segment:hover {
     cursor: pointer;
 }
+
+.more-less {
+    color: $brand-teal;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#product-details {
+    display: none;
+}

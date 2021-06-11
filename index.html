@@ -62,7 +62,36 @@
                 <button type="button" class="btn col btn-brand-primary" onclick="goTo('stake')">STAKE</button>
                 <button type="button" class="btn col btn-brand-secondary" onclick="goTo('white')">WHITEPAPER</button>
             </div>
-            <template class="col product-details">
+        </div>
+    </div>
+    <div class="row gx-1">
+        <div class="col-md-3">
+            <div class="d-flex flex-column align-items-center justify-content-center features gen4">
+                <img src="./img/gen4-icon.png" alt="icon for decentralised">
+                <p>GEN/4 DECENTRALISED<br/>EXCHANGE</p>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-end features more">
+                <p>MORE FEATURES</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="d-flex flex-column align-items-center justify-content-around features ai-trade">
+                <img src="./img/ai-trade-icon.png" alt="icon for Arbitrage Trading">
+                <p>ARBITRAGE TRADING</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex flex-column align-items-center justify-content-around features lending-platform">
+                <img src="./img/lending-platform-icon.png" alt="icon for Lending Platform">
+                <p>LENDING PLATFORM</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="col more-less" onclick="toggleTemplate('product-details')" id="product-details-text"></div>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 d-flex flex-column">
+            <div class="col product-details" id="product-details" style="display: none;">
                 <p>ImpulSeven is an all-in-one DeFi ecosystem that offers a range of products in one user-friendly
                     platform. Built on the Ethereum blockchain and powered by the ERC-20 i7 token, ImpulSeven is on a
                     mission to make DeFi accessible to everyone by offering an easy-to-use platform that maintains the
@@ -106,29 +135,6 @@
                     is the crucial differentiator that sets it apart from other DeFi solutions that use barebones,
                     complex interfaces that overwhelm newcomers.
                 </p>
-            </template>
-        </div>
-    </div>
-    <div class="row gx-1">
-        <div class="col-md-3">
-            <div class="d-flex flex-column align-items-center justify-content-center features gen4">
-                <img src="./img/gen4-icon.png" alt="icon for decentralised">
-                <p>GEN/4 DECENTRALISED<br/>EXCHANGE</p>
-            </div>
-            <div class="d-flex flex-column align-items-center justify-content-end features more">
-                <p>MORE FEATURES</p>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="d-flex flex-column align-items-center justify-content-around features ai-trade">
-                <img src="./img/ai-trade-icon.png" alt="icon for Arbitrage Trading">
-                <p>ARBITRAGE TRADING</p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="d-flex flex-column align-items-center justify-content-around features lending-platform">
-                <img src="./img/lending-platform-icon.png" alt="icon for Lending Platform">
-                <p>LENDING PLATFORM</p>
             </div>
         </div>
     </div>
