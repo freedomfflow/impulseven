@@ -44,6 +44,14 @@ function navigation() {
       sideNavModal.hide();
     }, 700)
   }));
+
+  // Lets do similar for footer links (no modal, but still need to adjust the scroll
+  let footerNavElements = document.querySelectorAll('.footer-nav');
+  footerNavElements.forEach(el => el.addEventListener('click', event => {
+    setTimeout(() => {
+      window.scrollBy(0, -100);
+    }, 700)
+  }));
 }
 
 // Toggle template to show/hide on click
@@ -52,17 +60,17 @@ function toggleTemplate(templateId) {
   let el = document.getElementById(templateId);
   if (el.style.display === 'none') {
     el.style.display = 'block';
-    document.getElementById('product-details-text').innerHTML = 'Less Information &#9650;';
+    document.getElementById('intro-details-text').innerHTML = 'Less Information &#9650;';
   } else {
     el.style.display = 'none';
-    document.getElementById('product-details-text').innerHTML = 'More Information &#9660;';
+    document.getElementById('intro-details-text').innerHTML = 'More Information &#9660;';
   }
 }
 
 // Do Stuff when page loads
 document.addEventListener('DOMContentLoaded', () => {
   // Apply more-less text
-  document.getElementById('product-details-text').innerHTML = 'More Information &#9660;';
+  document.getElementById('intro-details-text').innerHTML = 'More Information &#9660;';
 
   // Set up navigation
   navigation();

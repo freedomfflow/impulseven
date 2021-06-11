@@ -7986,7 +7986,20 @@ body {
 .more-less {
   color: #14F5ED;
   cursor: pointer;
-  font-size: 1.5em; }
+  font-size: .9em; }
 
 #product-details {
   display: none; }
+
+.custom-accordion .accordion-item {
+  border: 1px solid #414141 !important; }
+
+.custom-accordion .accordion-button {
+  background-color: #11081D;
+  padding-bottom: 0; }
+
+.custom-accordion .accordion-button::after {
+  color: teal !important; }
+
+.custom-accordion .accordion-body {
+  background-color: #11081D; }
