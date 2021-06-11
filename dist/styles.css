@@ -7534,6 +7534,14 @@ body {
   .btn-brand-secondary:hover {
     color: white; }
 
+.product-details h3, .product-details .h3 {
+  color: #14F5ED;
+  font-size: 24px;
+  margin-bottom: 24px; }
+
+.product-details p, .product-details ul {
+  color: white; }
+
 .modal-content {
   background-color: #11081D; }
   .modal-content .modal-header, .modal-content .modal-footer {
@@ -7610,10 +7618,12 @@ body {
     background: url(../img/ai-trade-bg.png) no-repeat 0 0/336px 470px; }
   .banner-1 .lending-platform {
     background: url(../img/lending-platform-bg.png) no-repeat 0 0/695px 470px; }
+  .banner-1 .intro-action {
+    margin: 0 auto 40px; }
 
 @media (min-width: 768px) {
   .banner-1 .intro-text {
-    height: 400px; }
+    padding: 80px 0; }
   .banner-1 .btn {
     height: 56px; }
     .banner-1 .btn:not(:last-child) {
@@ -7623,10 +7633,6 @@ body {
     height: 470px; }
   .banner-1 .lending-platform {
     height: 470px; } }
-
-.banner-2 p {
-  color: white;
-  margin-bottom: 0; }
 
 .banner-2 .section-title p {
   line-height: 2.5; }
@@ -7651,6 +7657,10 @@ body {
   font-weight: 700;
   margin-bottom: 14px; }
 
+.banner-2 .section-products p {
+  color: white;
+  margin-bottom: 0; }
+
 .banner-2 .glow {
   position: relative; }
   .banner-2 .glow-purple {
@@ -7658,6 +7668,9 @@ body {
     position: absolute;
     top: 20%;
     left: -42px; }
+
+.banner-2 .product-details {
+  margin-top: 40px; }
 
 @media (min-width: 768px) {
   .banner-2 {
@@ -7820,7 +7833,10 @@ body {
     background: url(../img/bg_banner2-topLeft.png) no-repeat 0 18px/66px 104px;
     padding: 50px 0; }
     .banner-6 .overview {
-      margin-left: 74px; } }
+      margin-left: 74px; }
+    .banner-6 .section-title {
+      position: relative;
+      background: url(../img/blue-glow-line.png) no-repeat 100% bottom/793px 131px; } }
 
 .banner-7 {
   height: 244px;
@@ -7854,7 +7870,8 @@ body {
   .banner-7 {
     background-position: 0 0; }
   .menu-bottom {
-    padding: 120px 0 50px; } }
+    padding: 60px 0;
+    background: url(../img/bg_glow-line-teal.png) no-repeat 0 0/187px 131px; } }
 
 .footer h4, .footer .h4 {
   color: white;
@@ -7884,8 +7901,10 @@ body {
       color: #14F5ED; }
 
 @media (min-width: 768px) {
-  .footer .footer-menu {
-    padding: 50px 0; } }
+  .footer {
+    background: url(../img/bg-bottom-right_purple-glow.png) no-repeat 105% 100%/211px 211px; }
+    .footer .footer-menu {
+      padding: 50px 0; } }
 
 /* Garys stuff */
 .graph {
