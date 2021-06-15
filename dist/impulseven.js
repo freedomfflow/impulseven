@@ -56,7 +56,6 @@ function navigation() {
 
 // Toggle template to show/hide on click
 function toggleTemplate(templateId) {
-  console.log(templateId);
   let el = document.getElementById(templateId);
   if (el.style.display === 'none') {
     el.style.display = 'block';
@@ -67,10 +66,24 @@ function toggleTemplate(templateId) {
   }
 }
 
+//TODO Method to invoke web3 api to get token balance
+function getTokenBalance() {
+  //TODO need to add async/await to wait on result and display, substituting data
+  let i7bal = '0';
+  let venbal = '0';
+  document.getElementById('token-balance').innerHTML = '' +
+      '<button type="button" class="btn btn-brand-secondary">' +
+      'My Tokens:  i7 --> ' + i7bal + ' / ven --> ' + venbal +
+      '</button>';
+}
+
 // Do Stuff when page loads
 document.addEventListener('DOMContentLoaded', () => {
   // Apply more-less text
   document.getElementById('intro-details-text').innerHTML = 'More Information &#9660;';
+
+  // Insert button in header for getting token balance
+  document.getElementById('token-balance').innerHTML = '<button type="button" class="btn btn-brand-primary" onClick="getTokenBalance()">Get Token Balance</button>';
 
   // Set up navigation
   navigation();
