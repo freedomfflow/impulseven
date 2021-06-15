@@ -26,4 +26,4 @@ To deploy this website, use these files/dirs
  - Any css changes should be made in the sass/styles.scss file.
  - To generate dist/styles.css, which is what the site imports when running, invoke gulp
  
-  - Just type 'gulp' from the command line in the root directory and it will compile the site and start a local web server
+  - Just type 'gulp' from the command line in the root directory and it will compile the site assets and start a local web server
