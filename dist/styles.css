@@ -8011,3 +8011,24 @@ body {
 
 .custom-accordion .accordion-body {
   background-color: #11081D; }
+
+.empty-balance-div {
+  min-width: 300px
+}
+
+.balance-div {
+  min-width: 300px;
+   border: 1px solid white;
+    display: flex;
+     justify-content : center;
+      align-items : center;
+       color:white;
+        margin-left: 5px
+}
+
+@media (max-width: 500px) {
+  .empty-balance-div {
+    min-width: 150px
+  }
+}
+
