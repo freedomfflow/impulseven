@@ -7484,6 +7484,18 @@ body {
     .navbar .navbar-brand img {
       height: 30px; } }
 
+.large-logo {
+  display: none; }
+
+.mobile-logo {
+  display: block; }
+
+@media (min-width: 992px) {
+  .large-logo {
+    display: block; }
+  .mobile-logo {
+    display: none; } }
+
 .modal.left .modal-dialog {
   position: fixed;
   right: 0;
@@ -7918,7 +7930,6 @@ body {
     .footer .footer-menu {
       padding: 50px 0; } }
 
-/* Garys stuff */
 .graph {
   align-items: center;
   position: relative; }
@@ -8011,24 +8022,3 @@ body {
 
 .custom-accordion .accordion-body {
   background-color: #11081D; }
-
-.empty-balance-div {
-  min-width: 300px
-}
-
-.balance-div {
-  min-width: 300px;
-   border: 1px solid white;
-    display: flex;
-     justify-content : center;
-      align-items : center;
-       color:white;
-        margin-left: 5px
-}
-
-@media (max-width: 500px) {
-  .empty-balance-div {
-    min-width: 150px
-  }
-}
-

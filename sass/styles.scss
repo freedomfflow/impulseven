@@ -23,6 +23,20 @@ body {
         }
     }
 }
+.large-logo {
+    display: none;
+}
+.mobile-logo {
+    display: block;
+}
+@include media-breakpoint-up(lg) {
+    .large-logo {
+        display: block;
+    }
+    .mobile-logo {
+        display: none;
+    }
+}
 .modal.left .modal-dialog {
 	position:fixed;
 	right: 0;
@@ -597,7 +611,6 @@ body {
     }
 }
 
-/* Garys stuff */
 .graph {
   align-items: center;
   position: relative;
